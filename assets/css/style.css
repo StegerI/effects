@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Indie+Flower|Lobster');
+/* font-family: 'Encode Sans Expanded', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Lobster', cursive; */
+
+html, body, section{
+    height: 100%;
+}
+
+body{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    background: #CE1E1E;
+    background: linear-gradient(90deg,#E73131, black, #E73131);
+}
+
+.container{
+    display: flex;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left{
+    background:  linear-gradient(rgba(0, 0, 0, 0.85), rgba(255, 255, 255, 0.1)) ,
+    url(../img/apple.jpeg);
+        background-size:cover;
+        background-position:center;
+    flex: 1;
+    padding: 1rem;
+    transition: all .2s ease-in-out;
+}
+
+.right{
+    background:  linear-gradient(rgba(0, 0, 0, 0.85), rgba(164, 222, 102, 0.1)) ,
+    url(../img/letters.png);
+        background-size:cover;
+        background-position:center;
+    flex: 1;
+    padding: 1rem;
+    transition: all .2s ease-in-out;
+}
+
+.left:hover, .right:hover{
+    transform: scale(0.95);
+}
+
+.left h1{
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 3rem;    
+}
+
+.left h1 span{
+    font-family: 'Indie Flower', cursive;
+    font-size: 6rem;
+    color: black;
+}
+
+.right h1{
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 3rem;
+}
+
+.right h1 span{
+    font-family: 'Lobster', cursive;
+    font-size: 6rem;
+    color: #E73131;
+}
+
+
+
+.button{
+    border-radius: 30px;
+    color: #fff;
+    background-color:#fcad26;
+    padding: 1.45%;
+    margin: 0 2%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all .3s;
+    width: 150px;
+}
+
+.button:hover{
+    background: #fcc567;
+    color: #fff;
+}

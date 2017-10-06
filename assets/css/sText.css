@@ -1,0 +1,181 @@
+@import url('grid.css');
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Indie+Flower|Lobster');
+/* font-family: 'Encode Sans Expanded', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Lobster', cursive; */
+
+
+body{
+    background: black;
+}
+.container{
+    position: relative;
+    height: 94vh;
+    width: 94vw;
+    margin: auto;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+}
+
+.container h1{
+    font-family: 'Encode Sans Expanded', sans-serif;
+    color: #796565;
+}
+
+.container h1 span{
+    font-family: 'Indie Flower', cursive;
+    color: #DA4;
+}
+
+.back{
+    position: fixed;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right:30px solid #796565;
+    transition: .5s;
+}
+
+.back:hover{
+    border-right:30px solid #DA4;
+}
+
+
+/* primer container */
+
+
+.box{
+    height: 100vh;
+    background: url(../img/pc.jpeg);
+    background-attachment:fixed; 
+    background-size:cover;
+    background-repeat:no-repeat; 
+    text-align: center;
+}
+.box h2{
+    font-family: 'Encode Sans Expanded', sans-serif;
+    color: #796565;
+    margin:0;
+    padding: 0;
+    font-size: 2em;
+}
+
+.box h2 span{
+    font-family: 'Indie Flower', cursive;
+    color: #DA4;
+    font-size: 1em;
+    margin: 0;
+}
+
+.box h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding-left:200px;
+    padding-right: 200px; 
+    text-align: center;
+    font-size: 5em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+    mix-blend-mode: overlay;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .2);
+}
+
+
+/* Segundo container */
+ul{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%) skewY(-8deg);
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background: #DA4;
+    box-shadow: 0 0 0 10px #fff;
+    overflow: hidden;
+}
+
+li{
+    display: block;
+    list-style: none;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    color: black;
+    padding: 0 10px;
+    font-size: 4em;
+    text-transform: uppercase;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(-100px) rotateY(0deg);
+    }
+    20%{
+        transform: translateY(0px) rotateY(360deg);
+    }
+    40%{
+        transform: translateY(-10px) rotateY(360deg);
+    }
+    50%{
+        transform: translateY(0px) rotateY(360px);
+    }
+    50%{
+        transform: translateY(0px) rotateY(360px);
+    }
+    60%{
+        transform: translateY(-10px) rotateY(360deg);
+    }
+    70%{
+        transform: translateY(0px) rotateY(360deg);
+    }
+    80%{
+        transform: translateY(0px) rotateY(360px);
+    }
+    100%{
+        transform: translateY(100px) rotateY(720deg);
+    }
+}
+
+li:nth-child(1){
+    animation-delay: .1s;
+}
+
+li:nth-child(2){
+    animation-delay:.2s; 
+}
+
+li:nth-child(3){
+    animation-delay:.3s; 
+}
+
+li:nth-child(4){
+    animation-delay:.4s; 
+}
+
+li:nth-child(5){
+    animation-delay:.5s; 
+}
+
+li:nth-child(6){
+    animation-delay: .6s;
+}
+
+li:nth-child(7){
+    animation-delay: .7s;
+}
+
+li:nth-child(8){
+    animation-delay: .8s;
+}
+
+li:nth-child(9){
+    animation-delay: .9s
+}
